@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.av1</groupId>
-	<artifactId>api</artifactId>
+	<artifactId>sistema_academico</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api</name>
+	<name>Sistema Acadêmico API</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

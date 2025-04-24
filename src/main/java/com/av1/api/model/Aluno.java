@@ -23,7 +23,7 @@ public class Aluno {
     private Date dataNascimento;
 
     @ManyToOne
-    @JoinColumn(name = "id")
+    @JoinColumn(name = "curso_id")
     private Curso curso;
 
 }

@@ -17,6 +17,24 @@ Desenvolvida com Java 24 e utilizando o framework Spring Boot no back-end, esta 
 
 <br>
 
+## 🚀 Endpoints disponíveis
+
+* GET /alunos – Lista todos os alunos
+* GET /alunos/{id} – Retorna um aluno específico
+* POST /alunos – Cadastra um novo aluno
+* PUT /alunos/{id} – Atualiza um aluno específico
+* DELETE /alunos – Deleta todos os alunos
+* DELETE /alunos/{id} – Deleta um aluno específico
+--------------------------------------------------
+* GET /cursos – Lista todos os cursos
+* GET /cursos/{id} – Retorna um curso específico
+* POST /cursos – Cadastra um novo curso
+* PUT /cursos/{id} – Atualiza um curso específico
+* DELETE /cursos – Deleta todos os cursos
+* DELETE /cursos/{id} – Deleta um curso específico
+
+<br>
+
 ## 📂 Estrutura do Projeto
 - `controllers/`: Contém os endpoints da API.
 - `model/`: Entidades JPA (Aluno, Curso).
@@ -46,11 +64,5 @@ Abra o arquivo `application.yml` e insira as configurações de conexão com o b
    Instale a extensão do Postman no VSCode para fazer requisições à API. Confira no phpMyAdmin se os cadastros estão sendo realizados.
 
 <br>
-
-## 🚀 Endpoints disponíveis
-* GET /alunos – Lista todos os alunos
-* POST /alunos – Cadastra um novo aluno
-* GET /cursos – Lista todos os cursos
-* POST /cursos – Cadastra um novo curso
 
 <br>

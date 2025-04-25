@@ -3,10 +3,7 @@ package com.av1.api.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.av1.api.model.Curso;
 import com.av1.api.services.CursoService;
@@ -24,5 +21,20 @@ public class CursoController {
     @PostMapping("/cursos")
     public Curso criarCurso(@RequestBody Curso curso) {
         return cursoService.criarAluno(curso);
+    }
+
+    @PutMapping("/cursos/{id}")
+    public Curso atualizarCurso(@PathVariable Long id, @RequestBody Curso curso) {
+        return cursoService.atualizarCurso(id, curso);
+    }
+
+    @DeleteMapping("/cursos/{id}")
+    public void deletar(@PathVariable Long id) {
+        cursoService.deletar(id);
+    }
+
+    @DeleteMapping("/cursos")
+    public void deletarTodos() {
+        cursoService.deletarTodos();
     }
 }

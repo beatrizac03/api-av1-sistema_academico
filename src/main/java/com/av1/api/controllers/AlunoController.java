@@ -22,4 +22,19 @@ public class AlunoController {
     public Aluno criarAluno(@RequestBody Aluno aluno) {
         return alunoService.criarAluno(aluno);
     }
+
+    @PutMapping("/alunos/{id}")
+    public Aluno atualizarAluno(@PathVariable Long id, @RequestBody Aluno aluno) {
+        return alunoService.atualizarAluno(id, aluno);
+    }
+
+    @DeleteMapping("/alunos/{id}")
+    public void deletar(@PathVariable Long id) {
+        alunoService.deletar(id);
+    }
+
+    @DeleteMapping("/alunos")
+    public void deletarTodos() {
+        alunoService.deletarTodos();
+    }
 }
